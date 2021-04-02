@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html>
+	<head>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="transcriber.js"></script>
+		<link rel="stylesheet" type="text/css" href="transcriber.css" />
+	</head>
+
+	<body>
+		<div id="videocontainer">
+			<video id="player" width="640" controls>
+				No video player available.
+			</video>
+		</div>
+		<input id="file-input" type="file" />
+
+
+		<textarea id="ruler" disabled="disabled">
+0        1         2         3         4         5         6         7
+1234568790123456879012345678901234567890123456789012345678901234567890
+		</textarea>
+		<textarea id="transcription"></textarea>
+		<textarea id="counter" readonly></textarea>
+
+		<p id="status"></p>
+	</body>
+</html>

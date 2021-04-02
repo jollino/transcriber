@@ -1,0 +1,7 @@
+body {}
+
+textarea { width: 640px; display: block; font-family: monospace; font-size: 14px; }
+#transcription, #counter { height: 500px; float: left; }
+#counter { width: 3em; display: inline; float: left; }
+#ruler { height: 2em; overflow: hidden; }
+#status { color: red; clear: both; }
