@@ -25,7 +25,7 @@ Two reasons: first and foremost, the tool uses the browser's local storage to sa
 
 **How do the web server scripts differ?**
 
-They are simply written in different languages (namely Python 2, Python 3 and PHP-cli), but do the same thing. Use whichever script works best for you.
+They are simply written in different languages (namely Python 2, Python 3, PHP-cli and Ruby), but do the same thing. Use whichever script works best for you. They all default to port 8877 so you can use http://localhost:8877 using any one of them.
 
 **What's the point of the ruler on top?**
 
