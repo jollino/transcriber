@@ -27,9 +27,9 @@ $(function() {
 				e.preventDefault();
 
 				var player = $("video")[0];
-				if (player.currentSrc == "") // non c'è nessun video
+				if (player.currentSrc == "") // no video loaded
 				{
-					alert("nessun video");
+					//alert("Please load a video first.");
 					return;
 				}
 
@@ -62,7 +62,7 @@ $(function() {
 	function saveStuff(manual) { // undefined if auto
 		localStorage.setItem("transcription", $("#transcription").val());
 		if (manual === undefined) {
-			showStatus("Text automatically saved.");
+			showStatus("Text saved automatically.");
 		} else {
 			showStatus("Text saved by the user.")
 		}
@@ -73,7 +73,7 @@ $(function() {
 	function showStatus(str) {
 		var d = new Date();
 		var now = d.toLocaleTimeString()
-		$("#status").html(now + "&mdash; " + str);
+		$("#status").html("[" + now + "] " + str);
 	}
 
 	/***/
@@ -119,7 +119,7 @@ $(function() {
 	// onload:
 	$("#transcription").val( localStorage.getItem("transcription") ).trigger("change");
 	setInterval(saveStuff, 10000)
-	showStatus("Text read from storage, ready.");
+	showStatus("Text read from storage, system ready.");
 });
 
 //https://codepen.io/SpencerCooley/pen/JtiFL/

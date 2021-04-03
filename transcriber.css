@@ -1,7 +1,13 @@
-body {}
-
+body { background: #e6f7ff; font-family: Helvetica, Arial, sans-serif; }
+h1 { text-align: center; }
 textarea { width: 640px; display: block; font-family: monospace; font-size: 14px; }
+#videocontainer { float: right; }
+#videocontainer input { display: block; }
+#editor { float: left; }
 #transcription, #counter { height: 500px; float: left; }
 #counter { width: 3em; display: inline; float: left; }
 #ruler { height: 2em; overflow: hidden; }
-#status { color: red; clear: both; }
+.clear { display: block; clear: both; }
+#status { color: #000066; margin-top: 0.5em; }
+#footer { clear: both; text-align: center; font-size: 90%; margin-top: 3em; }
+#footer p { border-top: solid 1px black; display: inline; }
